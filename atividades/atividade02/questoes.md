@@ -1,3 +1,5 @@
+> Correção: 0,7
+
 ## Atividade 02
 #### Aluno: Weslley Itallo Vieira da Silva
 #### Matrícula: 471699
@@ -18,6 +20,8 @@ Híbrido | Java
 <br/>
 
 __2. Muitas linguagens contemporâneas permitem dois tipos de comentários. Discuta as vantagens e desvantagens de cada um dos tipos de acordo com os critérios apresentados.__  
+
+> Correção: você citou os critérios, o que é esperado. Mas a comparação está vaga. Realmente não tem diferença entre os dois tipos de comentários em nenhum dos critérios?
 
 __Resposta:__ Legibilidade: Ambas as maneiras possuem boa legibilidade, desde que utilizadas da maneira adequada (comentário de linha para trechos menores, múltiplas linhas para trechos grandes de código).  
 Facilidade de Escrita: Ambas possuem boa facilidade de escrita, pois são implementadas de maneira simples.  
