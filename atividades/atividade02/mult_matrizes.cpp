@@ -1,3 +1,4 @@
+// Correção: faltou a versão com while.
 #include <iostream>
 
 using namespace std;
