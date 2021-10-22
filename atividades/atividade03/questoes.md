@@ -84,3 +84,54 @@ Resposta:
 <lexp> -> (<identificador> 23 (m x y))
 <lexp> -> (a 23 (m x y))
 ```
+![Árvore de Análise Sintática: (a 23 (m x y))](https://github.com/WeslliVs/weslleyitallolip20212/blob/main/atividades/atividade03/Att03%20-%20Diag3.png?raw=true)  
+
+<br/>
+
+__3. Escreva uma descrição BNF para uma sentença switch em C.__  
+Resposta: Código em C:  
+```
+int x;
+switch (x){
+      case 0: 
+            statement;
+            break;
+      case 1: 
+            statement;
+            break;
+      default: 
+            statement;
+            break;
+}
+```
+BNF (Switch): 
+```
+<switch_stmt> -> switch(<term>){cases}
+<term> -> var | const
+<var> -> x
+<case_list> -> <case_num> | <case_num> <case_list>
+<case_num> -> <case> <int> | default
+<case> -> case <int> : <stmt> : break;
+<default> -> default : <stmt> : break;
+<int> -> const
+<stmt> -> statement
+
+<switch_stmt> -> switch(<term>{case_list}
+<switch_stmt> -> switch(<var>){case_list}
+<switch_stmt> -> switch(x){case_list}
+<switch_stmt> -> switch(x){<case_num> <case_list>}
+<switch_stmt> -> switch(x){<case_num> <case_num> <case_list>}
+<switch_stmt> -> switch(x){<case_num> <case_num> <case_num>}-1
+<switch_stmt> -> switch(x){<case> <int> <case_num> <case_num>}-2
+<switch_stmt> -> switch(x){case <int> : <stmt> : break; <case_num> <case_num>}-3
+<switch_stmt> -> switch(x){case const : <stmt> : break; <case_num> <case_num>}-4
+<switch_stmt> -> switch(x){case const : statement : break; <case_num> <case_num>}-5
+<switch_stmt> -> switch(x){case const : statement : break; <case> <int> <case_num>}
+<switch_stmt> -> switch(x){case const : statement : break; case <int> : <stmt> : break; <case_num>}
+<switch_stmt> -> switch(x){case const : statement : break; case const : <stmt> : break; <case_num>}
+<switch_stmt> -> switch(x){case const : statement : break; case const : statement : break; <case_num>}
+<switch_stmt> -> switch(x){case const : statement : break; case const : statement : break; <default>}
+<switch_stmt> -> switch(x){case const : statement : break; case const : statement : break; default : <stmt> : break;}
+<switch_stmt> -> switch(x){case const : statement : break; case const : statement : break; default : statement : break;}
+```
+Fonte utilizada como base para a questão anterior: <https://pt.slideshare.net/ssuserf217c2/bnf-of-c-switch-statement>
