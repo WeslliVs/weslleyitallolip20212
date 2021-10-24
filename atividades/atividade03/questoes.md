@@ -2,6 +2,12 @@
 #### Aluno: Weslley Itallo Vieira da Silva
 #### Matrícula: 471699
 
+> Correção: 1,8
+> 
+> Tudo OK nas primeiras questões, nada a reclamar, estão corretas. 
+> Agora sua última é um caso interessante. Graças a você, agora sei de onde a maioria tirou a resposta. Entretanto, enquanto a maioria só recortou e colou, você meio que tentou alterar a gramática e fez uma derivação na baseada na sua gramática alterada, que de certa forma, está errada. Por exemplo, o que separa o statement do break não é :, mas sim ;. Mas acho que existe mérito em pelo menos tentar alterar, pois nesse esforço, acredito que você desenvolveu o raciocínio para realmente aprender o que é a BNF.  
+> 
+
 <br/>
 
 __1. Usando a gramática do exemplo 3.4 no livro texto, mostre uma árvore de análise sintática e uma derivação mais à esquerda para cada uma das seguintes sentenças:__
