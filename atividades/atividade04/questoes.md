@@ -37,6 +37,7 @@ __Resposta:__ Para a sentença: a + b + c, temos pelo menos duas árvores com de
 ![Árvore de Análise Sintática - Segunda Derivação](https://github.com/WeslliVs/weslleyitallolip20212/blob/main/atividades/atividade04/Att04-Diag2.png?raw=true)
 
 <br/>
+<br/>
 
 __2. Transforme a seguinte gramática em EBNF:__
 ```
@@ -59,6 +60,7 @@ __Resposta:__
 ```
 
 <br/>
+<br/>
 
 __3. Transforme a seguinte gramática em EBNF:__
 ```
@@ -79,6 +81,7 @@ __Resposta:__
 ```
 
 <br/>
+<br/>
 
 __4. Escreva uma gramática de atributos considerando a seguinte gramática:__
 ```
@@ -89,5 +92,17 @@ __4. Escreva uma gramática de atributos considerando a seguinte gramática:__
 ```
 __Resposta:__
 ```
-
+1. Regra Sintática: <assign> -> <var> = <expr>
+   Regra Semântica: <expr>.actual_type <- <var>.actual_type
+2. Regra Sintática: <expr> → <var>[2] + <var>[3]
+   Regra Semântica: <expr>.actual_type <- 
+                          if (<var>[2].actual_type = int) and (<var>[3].actual_type = int)
+                             then int
+                          else real
+                          end if
+   Predicado: <var>[2].actual_type == <var>[3].actual_type
+3. Regra Sintática: <expr> → <var>
+   Regra Semântica: <expr>.actual_type <- <var>.actual_type
+4. Regra Sintática: <var> → A|B|C
+   Regra Semântica: <var>.actual_type <- look-up(<var>.string)
 ```
