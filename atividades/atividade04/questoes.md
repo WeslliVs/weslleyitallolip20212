@@ -1,4 +1,7 @@
 ## Atividade 04
+
+> Correção: 1,1
+
 #### Aluno: Weslley Itallo Vieira da Silva
 #### Matrícula: 471699
 
@@ -39,6 +42,10 @@ __Resposta:__ Para a sentença: a + b + c, temos pelo menos duas árvores com de
 <br/>
 <br/>
 
+> Correção: 0,5
+>
+> Tudo OK!!!
+
 __2. Transforme a seguinte gramática em EBNF:__
 ```
 <program> → begin <stmt_list> end 
@@ -59,8 +66,13 @@ __Resposta:__
 <expression> → <var> {(+|-) <var>}
 ```
 
-<br/>
-<br/>
+> Correção: 0,3
+>
+> ```<stmt> {<stmt> ; <stmt_list>}```
+>
+> era para ser
+>
+> ```<stmt> {;<stmt>}```
 
 __3. Transforme a seguinte gramática em EBNF:__
 ```
@@ -80,9 +92,16 @@ __Resposta:__
        | <id>
 ```
 
-<br/>
-<br/>
-
+> Correção: 0,3
+>
+> ```<expr> {(+|*) <expr>}```
+>
+> era para ser:
+>
+> ```<expr> [(+|*) <expr>]```
+>
+> pois a segunda parte precisa aparecer pelo menos uma vez.
+            
 __4. Escreva uma gramática de atributos considerando a seguinte gramática:__
 ```
 <assign> → <var> = <expr> 
@@ -106,3 +125,6 @@ __Resposta:__
 4. Regra Sintática: <var> → A|B|C
    Regra Semântica: <var>.actual_type <- look-up(<var>.string)
 ```
+            
+
+> Correção: 0,0
