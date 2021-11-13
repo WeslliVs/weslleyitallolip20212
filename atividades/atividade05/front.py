@@ -1,3 +1,7 @@
+# Correção: 1,5
+# A questão pede Python 3. Também evite colocar caminhos completos no seu código. Seu programa só executa sem erro
+# se a máquina tiver o diretório C:/Users/wesll/Documents/Development/Python/LIP/Atividade 05/.
+
 from types import NoneType
 charClass = 0
 lexeme = [100]
