@@ -1,3 +1,4 @@
+# Correção: 1,0
 def expr():
     term()
     while (nextToken == ADD_OP | nextToken == SUB_OP):
