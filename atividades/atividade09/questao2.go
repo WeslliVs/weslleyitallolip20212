@@ -1,3 +1,5 @@
+// Correção: 0,4
+// Crie suas funções com parâmetros.
 package main
 
 import (
