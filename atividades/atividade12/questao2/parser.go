@@ -1,3 +1,4 @@
+// Correção: 0,2. Não tem integração.
 package main
 
 import "fmt"

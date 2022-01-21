@@ -1,3 +1,4 @@
+// Correção: 0,5. Não executa, analisa um arquivo diferente (word.txt?!?)
 package main
 
 import (
