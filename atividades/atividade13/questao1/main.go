@@ -1,3 +1,4 @@
+// Correção: 0,0. A função continua recebendo fatia ([]int), não ponteiro ([5]int)
 package main
 
 import "fmt"
