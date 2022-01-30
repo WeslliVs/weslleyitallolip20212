@@ -14,6 +14,7 @@ func main() {
 	count_digit := 0
 	count_letter := 0
 	count_lower := 0
+	count_print := 0
 	count_punct := 0
 	count_space := 0
 	count_symbol := 0
@@ -58,6 +59,10 @@ func main() {
 			count_lower++
 		}
 
+		if (unicode.IsPrint(r)){
+			count_print++
+		}
+
 		if (unicode.IsPunct(r)){
 			count_punct++
 		}
@@ -76,24 +81,14 @@ func main() {
 
 	}
 
-	fmt.Printf("Quantidade de Letras minúsculas: %d\n", count_lower)
-	fmt.Printf("Quantidade de Letras maiúsculas: %d\n", count_upper)
-	fmt.Printf("Quantidade de Letras: %d\n", count_letter)
-	fmt.Printf("Quantidade de Dígitos: %d\n", count_digit)
-	fmt.Printf("Quantidade de Pontos: %d\n", count_punct)
-	fmt.Printf("Quantidade de Espaços: %d\n", count_space)
-	fmt.Printf("Quantidade de Símbolos: %d\n", count_symbol)
-
-	fmt.Printf("rune\tcount\n")
-	for c, n := range counts {
-		fmt.Printf("%q\t%d\n", c, n)
-	}
-	fmt.Printf("len\tcount\n")
-	for i, n := range utflen {
-		if i > 0 {
-			fmt.Printf("%d\t%d\n", i, n)
-		}
-	}
+	fmt.Printf("Letras minúsculas: %d\n", count_lower)
+	fmt.Printf("Letras maiúsculas: %d\n", count_upper)
+	fmt.Printf("Letras: %d\n", count_letter)
+	fmt.Printf("Dígitos: %d\n", count_digit)
+	fmt.Printf("Pontos: %d\n", count_punct)
+	fmt.Printf("Espaços: %d\n", count_space)
+	fmt.Printf("Símbolos: %d\n", count_symbol)
+	fmt.Printf("Caracteres Visíveis: %d\n", count_print)
 
 	if invalid > 0 {
 		fmt.Printf("\n%d invalid UTF-8 characters\n", invalid)
