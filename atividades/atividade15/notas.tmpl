@@ -1,0 +1,63 @@
+<html>
+<head>
+<title> {{.PageTitle}} </title>
+</head>
+
+<body>
+		{{range .Disciplina}}
+    <h1>{{.Title}}</h1>
+		<h2>{{.Professor}}</h2>
+
+    <table border = "1">
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Primeira Nota
+            </th>
+            <th>
+                Segunda Nota
+            </th>
+            <th>
+                Terceira Nota
+            </th>
+						<th>
+                Média
+            </th>
+						<th>
+                Situação
+            </th>
+        </tr>
+
+        {{range .Aluno}}
+        <tr>
+            <td>
+                {{.Nome}} 
+            </td>
+            <td>
+                {{.N1}}
+            </td>
+						<td>
+                {{.N2}}
+            </td>
+						<td>
+                {{.N3}}
+            </td>
+						<td>
+                {{.Media}}
+            </td>
+						<td>
+							{{if .Situacao}}
+								Aprovado
+							{{else}}
+								Reprovado
+							{{end}}
+            </td>
+        </tr>
+        {{end}}
+    </table>
+		{{end}}
+</body>
+
+</html>
