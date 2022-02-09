@@ -1,3 +1,5 @@
+// Correção: 0,5. Você faz dois tesets, sendo que um com certeza irá falhar. O problema é que as notas dos alunos deveria ser uma fatia de inteiros, logo nunca irá conseguir
+// deserializar, seja por Disciplina ou por Aluno.
 package main
 
 import (
